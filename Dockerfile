@@ -1,7 +1,7 @@
 FROM node:14
 
 WORKDIR /usr/src/app
-COPY $PWD/package.json ./
+COPY $PWD/package*.json ./
 
 RUN npm install
 COPY $PWD/index.js ./index.js
